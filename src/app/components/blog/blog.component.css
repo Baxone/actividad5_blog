@@ -18,29 +18,6 @@
   }
 }
 
-
-/*
-Estilos del formulario
-*/
-input,
-textarea,
-button {
-  font-family: var(--primary-font);
-  padding: 5px;
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-textarea {
-  resize: none;
-}
-
-
-
-
-
-
 @media(width>=900px) {
   .flex {
     div.form {
