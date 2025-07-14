@@ -1,0 +1,59 @@
+.blog {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  div.form {
+    width: 100%;
+    padding: 0px 20px;
+  }
+
+  div.content {
+    width: 100%;
+    padding: 0px 20px;
+  }
+}
+
+
+/*
+Estilos del formulario
+*/
+input,
+textarea,
+button {
+  font-family: var(--primary-font);
+  padding: 5px;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+/*
+Estilos de las noticias
+*/
+.new {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #444;
+}
+
+
+
+
+@media(width>=900px) {
+  .flex {
+    div.form {
+      width: 40%;
+    }
+
+    div.content {
+      width: 60%;
+    }
+  }
+}
