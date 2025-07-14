@@ -20,3 +20,14 @@ img {
   height: auto;
   display: block;
 }
+
+/*
+Estilos de las noticias
+*/
+.new {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #444;
+  margin-bottom: 20px;
+}

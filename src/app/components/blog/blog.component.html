@@ -4,25 +4,25 @@
 
       <div>
         <label for="title">Titulo</label>
-        <input type="text" id="title">
+        <input type="text" id="title" [(ngModel)]="newNoticia.title">
       </div>
       <div>
         <label for="url">URL</label>
-        <input type="text" id="url">
+        <input type="text" id="url" [(ngModel)]="newNoticia.url">
       </div>
       <div>
         <label for="body">Cuerpo de texto</label>
-        <textarea id="body"></textarea>
+        <textarea id="body" [(ngModel)]="newNoticia.body" rows="10"></textarea>
       </div>
       <div>
         <label for="date">Fecha</label>
-        <input type="date" id="date">
+        <input type="date" id="date" [(ngModel)]="newNoticia.date">
       </div>
-      <button class="btn">Guardar Noticia</button>
+      <button class="btn" (click)="guardarNoticia()">Guardar Noticia</button>
 
     </div>
-    <div class="content">
-      <article class="new">
+    <div class="content" [innerHTML]="cargarContenido()">
+      <!-- <article class="new">
         <figure>
           <img
             src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTG7aMVWY3XOkXZ031IWeZICO4zBpR4WAtzXWaUnmj0mHhdJbk4HRMgcuW-mgq7WkxDv67IjJL84YuBNeQLoGFKUO9IMCu70Go2zeuW-g"
@@ -33,7 +33,7 @@
           contenido de la noticia
         </div>
         <p>Fecha: 12/07/2025</p>
-      </article>
+      </article> -->
     </div>
   </div>
 </section>
