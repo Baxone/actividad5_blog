@@ -1,0 +1,21 @@
+header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px solid red;
+
+  span {
+    color: red;
+    font-weight: 700;
+  }
+}
+
+footer {
+  background-color: black;
+  padding: 10px;
+  color: white;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
